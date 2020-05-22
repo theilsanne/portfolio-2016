@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <title>s u p e r | secret</title>
+        
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400italic,700' rel='stylesheet' type='text/css'>
+        
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+            }
+            
+            #container {
+                min-height: 100%;
+                min-height: 100vh;
+                height: auto !important;
+                height: 100%;
+                width: 100%;
+                overflow-y: hidden;
+                overflow-x: hidden;
+                border: 0.75em solid transparent;  
+                -moz-border-image: -moz-linear-gradient(top right, #FB9E13 0%, #FF3569 25%, #A34ADA 75%, #4338D4 100%);
+                -webkit-border-image: -webkit-linear-gradient(top right, #FB9E13 0%, #FF3569 25%, #A34ADA 75%, #4338D4 100%));
+                border-image: linear-gradient(to bottom left, #FB9E13 0%, #FF3569 25%, #A34ADA 75%, #4338D4 100%);
+                border-image-slice: 1;
+            }
+            
+            body {
+                background-color: #ddd;
+                text-align: center;
+                color: #6d6d6d;
+                font-family: 'Playfair Display', serif;
+                font-size: 1em;
+                text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+                -moz-text-size-adjust: 100%;
+                -o-text-size-adjust: 100%;
+            }
+            
+            #content {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                padding: 30px 0;
+                overflow: auto;
+                overflow-y: hidden;
+                overflow-x: hidden;
+                min-height: 69vh;
+            }
+            
+            header img {
+                display: none;
+                margin: 0 auto;
+                width: 120px;
+                transition: all 0.2s ease;
+            }
+            
+            img {
+                max-width: 100%;
+            }
+            
+            h1 {
+                color: #FF3569;
+            }
+            
+            h2 {
+                color: #A34ADA;
+            }
+            
+            h3 {
+                color: #4338D4;
+            }
+            
+            p, footer {
+                width: 50%;
+                padding: 20px;
+                margin: 0 auto;
+                font-family: sans-serif;
+                font-weight: 300;
+                letter-spacing: 0.5px;
+            }
+            
+            .button {
+                display: inline-block;
+                width: auto;
+                height: auto;
+                margin: 5px 0;
+                padding: 7px 14px;
+                color: #FC515E;
+                border: 1px solid #FC515E;
+                transition: all 0.2s ease;
+                cursor: pointer;
+            }
+
+            .button:hover, .button.selected {
+                background-color: #FC515E;
+                color: #fff;
+            }
+            
+            .vert {
+                border-left: 1px dashed #888;
+                width: 1px;
+                height: 60px;
+                margin: 20px auto;
+            }
+            
+            .screens img {
+                width: 18%;
+                margin: 5px;
+                display: inline-block;
+                vertical-align: top;
+            }
+            
+            .clear {
+                clear: both;
+                height: 30px;
+            }
+
+            @media screen and (max-width: 1200px) {
+                #content {
+                    width: 96%;
+                }
+                
+                .screens img {
+                    width: 36%;
+                }
+            }
+        </style>
+        
+        <script>
+            window.onload = init;
+            
+            function init() {
+                var logo = document.querySelector("#goHome");
+                
+                logo.style.display = "block";
+            
+                logo.onmouseover = function() {
+                    logo.src = "../assets/media/icons/colourful-logo-hover.png";
+                }
+                
+                logo.onmouseout = function() {
+                    logo.src = "../assets/media/icons/colourful-logo.png";
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <div id="container">
+        
+            <div id="content">
+                <header>
+                    <a href="../work.php"><img id="goHome" src="../assets/media/icons/colourful-logo.png" alt="super c o l o u r f u l logo!" /></a>
+                </header>
+
+                <h1>s u p e r</h1>
+                <h2>s e c r e t</h2>
+                <h3>s t u f f</h3>
+
+                <div class="vert"></div>
+
+                <p>This is <strong>ambiánce</strong>, a project that is currently work in progress.</p>
+
+                <div class="clear"></div>
+                
+                <div class="screens">
+                    <img src="../assets/media/ambiance/in-progress/1.png" alt="Landing screen" />
+                    <img src="../assets/media/ambiance/in-progress/2.png" alt="Feed screen" />
+                    <img src="../assets/media/ambiance/in-progress/3.png" alt="Filter screen" />
+                    <img src="../assets/media/ambiance/in-progress/4.png" alt="Camera screen" />
+                    <img src="../assets/media/ambiance/in-progress/5.png" alt="Location info screen" />
+                    <img src="../assets/media/ambiance/in-progress/6.png" alt="Map screen" />
+                    <img src="../assets/media/ambiance/in-progress/7.png" alt="History screen" />
+                    <img src="../assets/media/ambiance/in-progress/8.png" alt="Event screen" />
+                    <img src="../assets/media/ambiance/in-progress/9.png" alt="Settings screen" />
+                </div>
+                
+                <div class="clear"></div>
+                
+                <footer>
+                    Copyright &copy;
+                    <script type="text/javascript">document.write(new Date().getFullYear());</script>
+                    | Ethelia Lung
+                </footer>
+                
+            </div>
+
+        </div>
+    </body>
+</html>

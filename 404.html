@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <title>oops</title>
+        
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400italic,700' rel='stylesheet' type='text/css'>
+        
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+            }
+            
+            body {
+                background-color: #ddd;
+                text-align: center;
+                color: #6d6d6d;
+                font-family: 'Playfair Display', serif;
+                font-size: 1em;
+                min-height: 100vh;
+                height: auto !important;
+                height: 100%;
+                width: 100%;
+                overflow-y: hidden;
+                overflow-x: hidden;
+                border: 0.75em solid transparent;  
+                -moz-border-image: -moz-linear-gradient(top right, #FB9E13 0%, #FF3569 25%, #A34ADA 75%, #4338D4 100%);
+                -webkit-border-image: -webkit-linear-gradient(top right, #4338D4 0%, #FF3569 25%, #A34ADA 75%, #53C4F5 100%);
+                border-image: linear-gradient(to bottom left, #FB9E13 0%, #FF3569 25%, #A34ADA 75%, #4338D4 100%);
+                border-image-slice: 1;
+            }
+            
+            #content {
+                position: absolute;
+                width: 25%;
+                height: auto;
+                top: 50%;
+                left: 50%;
+                margin-top: -17%;
+                margin-left: -12.5%;
+                /*top: 20vh;
+                border: 1px solid red;*/
+                display: inline-block;
+            }
+            
+            img {
+                max-width: 100%;
+            }
+            
+            .title {
+                font-size: 4em;
+                z-index: -10;
+                color: #232323;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -1.25em;
+                margin-left: -1em;
+            }
+            
+            .button {
+                display: inline-block;
+                width: auto;
+                height: auto;
+                margin: 5px 0;
+                padding: 7px 14px;
+                color: #FC515E;
+                border: 1px solid #FC515E;
+                transition: all 0.2s ease;
+                cursor: pointer;
+            }
+
+            .button:hover, .button.selected {
+                background-color: #FC515E;
+                color: #fff;
+            }
+            
+            span {
+                font-family: sans-serif;
+            }
+
+            @media screen and (max-width: 1200px) {
+                #content {
+                    width: 50%;
+                    height: auto;
+                    top: 50%;
+                    left: 50%;
+                    margin-top: -34%;
+                    margin-left: -25%;
+                }
+                
+                .title {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    margin: 0;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="content">
+            <img class="404" src="assets/media/icons/404.gif" alt="Oopsie daisies" />
+            <div class="title">oops</div>
+            <br />
+            <span>someone goofed.</span>
+            <br /><br />
+            <div class="button" onClick="goBack()">go back in time</div>
+        </div>
+        
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+    </body>
+</html>
